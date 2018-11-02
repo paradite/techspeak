@@ -33,7 +33,7 @@
   ],
   [
     "css",
-    "VBP"
+    "NN"
   ],
   [
     "mysql",
@@ -53,7 +53,7 @@
   ],
   [
     "r",
-    "VBP"
+    "NN"
   ],
   [
     "angularjs",
@@ -85,7 +85,7 @@
   ],
   [
     "django",
-    "NN"
+    "IN"
   ],
   [
     "excel",
@@ -117,7 +117,7 @@
   ],
   [
     "angular",
-    "NN"
+    "JJ"
   ],
   [
     "vba",
@@ -137,7 +137,7 @@
   ],
   [
     "eclipse",
-    "VBP"
+    "NN"
   ],
   [
     "multithreading",
@@ -185,7 +185,7 @@
   ],
   [
     "algorithm",
-    "VBP"
+    "NN"
   ],
   [
     "pandas",
@@ -193,7 +193,7 @@
   ],
   [
     "scala",
-    "VBP"
+    "NN"
   ],
   [
     "facebook",
@@ -201,7 +201,7 @@
   ],
   [
     "apache",
-    "NN"
+    "PRP"
   ],
   [
     "winforms",
@@ -209,7 +209,7 @@
   ],
   [
     "list",
-    "VBP"
+    "NN"
   ],
   [
     "matlab",
@@ -297,7 +297,7 @@
   ],
   [
     "uitableview",
-    "VBP"
+    "NN"
   ],
   [
     "csv",
@@ -409,7 +409,7 @@
   ],
   [
     "templates",
-    "VBZ"
+    "NNS"
   ],
   [
     "pointers",
@@ -417,7 +417,7 @@
   ],
   [
     "dataframe",
-    "VBP"
+    "NN"
   ],
   [
     "variables",
@@ -461,7 +461,7 @@
   ],
   [
     "tomcat",
-    "NN"
+    "IN"
   ],
   [
     "ssl",
@@ -477,7 +477,7 @@
   ],
   [
     "web",
-    "VBP"
+    "NN"
   ],
   [
     "elasticsearch",
@@ -525,7 +525,7 @@
   ],
   [
     "go",
-    "VB"
+    "IN"
   ],
   [
     "nginx",
@@ -553,7 +553,7 @@
   ],
   [
     "jenkins",
-    "VBZ"
+    "NNS"
   ],
   [
     "exception",
@@ -569,7 +569,7 @@
   ],
   [
     "opengl",
-    "VBP"
+    "NN"
   ],
   [
     "xslt",
@@ -590,5 +590,533 @@
   [
     "caching",
     "VBG"
+  ],
+  [
+    "join",
+    "NN"
+  ],
+  [
+    "select",
+    "NN"
+  ],
+  [
+    "iis",
+    "NNS"
+  ],
+  [
+    "servlets",
+    "NNS"
+  ],
+  [
+    "button",
+    "NN"
+  ],
+  [
+    "github",
+    "NN"
+  ],
+  [
+    "gcc",
+    "NN"
+  ],
+  [
+    "search",
+    "NN"
+  ],
+  [
+    "cakephp",
+    "NN"
+  ],
+  [
+    "gradle",
+    "NN"
+  ],
+  [
+    "svg",
+    "NN"
+  ],
+  [
+    "heroku",
+    "NN"
+  ],
+  [
+    "logging",
+    "VBG"
+  ],
+  [
+    "assembly",
+    "RB"
+  ],
+  [
+    "matrix",
+    "NN"
+  ],
+  [
+    "audio",
+    "NN"
+  ],
+  [
+    "canvas",
+    "NNS"
+  ],
+  [
+    "networking",
+    "VBG"
+  ],
+  [
+    "grails",
+    "NNS"
+  ],
+  [
+    "video",
+    "NN"
+  ],
+  [
+    "xpath",
+    "NN"
+  ],
+  [
+    "encryption",
+    "NN"
+  ],
+  [
+    "meteor",
+    "NN"
+  ],
+  [
+    "memory",
+    "NN"
+  ],
+  [
+    "silverlight",
+    "NN"
+  ],
+  [
+    "javafx",
+    "NN"
+  ],
+  [
+    "cookies",
+    "NNS"
+  ],
+  [
+    "razor",
+    "NN"
+  ],
+  [
+    "optimization",
+    "NN"
+  ],
+  [
+    "iframe",
+    "NN"
+  ],
+  [
+    "jdbc",
+    "NN"
+  ],
+  [
+    "arraylist",
+    "NN"
+  ],
+  [
+    "serialization",
+    "NN"
+  ],
+  [
+    "mysqli",
+    "NN"
+  ],
+  [
+    "activerecord",
+    "NN"
+  ],
+  [
+    "svn",
+    "NN"
+  ],
+  [
+    "vector",
+    "NN"
+  ],
+  [
+    "gridview",
+    "NN"
+  ],
+  [
+    "random",
+    "NN"
+  ],
+  [
+    "checkbox",
+    "NN"
+  ],
+  [
+    "flask",
+    "NN"
+  ],
+  [
+    "soap",
+    "NN"
+  ],
+  [
+    "mobile",
+    "JJ"
+  ],
+  [
+    "flex",
+    "NN"
+  ],
+  [
+    "plot",
+    "NN"
+  ],
+  [
+    "input",
+    "NN"
+  ],
+  [
+    "sharepoint",
+    "NN"
+  ],
+  [
+    "text",
+    "NN"
+  ],
+  [
+    "vim",
+    "NN"
+  ],
+  [
+    "indexing",
+    "NN"
+  ],
+  [
+    "extjs",
+    "NNS"
+  ],
+  [
+    "mvvm",
+    "NN"
+  ],
+  [
+    "npm",
+    "NN"
+  ],
+  [
+    "webpack",
+    "NN"
+  ],
+  [
+    "boost",
+    "NN"
+  ],
+  [
+    "layout",
+    "IN"
+  ],
+  [
+    "methods",
+    "NNS"
+  ],
+  [
+    "mongoose",
+    "NN"
+  ],
+  [
+    "awk",
+    "NN"
+  ],
+  [
+    "twitter",
+    "NN"
+  ],
+  [
+    "tkinter",
+    "NN"
+  ],
+  [
+    "dynamic",
+    "JJ"
+  ],
+  [
+    "netbeans",
+    "NNS"
+  ],
+  [
+    "groovy",
+    "NN"
+  ],
+  [
+    "dll",
+    "NN"
+  ],
+  [
+    "browser",
+    "NN"
+  ],
+  [
+    "pdo",
+    "NN"
+  ],
+  [
+    "time",
+    "NN"
+  ],
+  [
+    "struct",
+    "NN"
+  ],
+  [
+    "ssh",
+    "NN"
+  ],
+  [
+    "design",
+    "NN"
+  ],
+  [
+    "plugins",
+    "NNS"
+  ],
+  [
+    "sed",
+    "VBD"
+  ],
+  [
+    "gwt",
+    "NN"
+  ],
+  [
+    "lambda",
+    "NN"
+  ],
+  [
+    "unicode",
+    "NN"
+  ],
+  [
+    "reflection",
+    "NN"
+  ],
+  [
+    "graph",
+    "NN"
+  ],
+  [
+    "replace",
+    "NN"
+  ],
+  [
+    "charts",
+    "NNS"
+  ],
+  [
+    "junit",
+    "NN"
+  ],
+  [
+    "hash",
+    "NN"
+  ],
+  [
+    "service",
+    "NN"
+  ],
+  [
+    "plsql",
+    "NN"
+  ],
+  [
+    "highcharts",
+    "NNS"
+  ],
+  [
+    "encoding",
+    "VBG"
+  ],
+  [
+    "drupal",
+    "JJ"
+  ],
+  [
+    "tfs",
+    "NNS"
+  ],
+  [
+    "collections",
+    "NNS"
+  ],
+  [
+    "foreach",
+    "NN"
+  ],
+  [
+    "filter",
+    "NN"
+  ],
+  [
+    "https",
+    "NNS"
+  ],
+  [
+    "nhibernate",
+    "NN"
+  ],
+  [
+    "login",
+    "NN"
+  ],
+  [
+    "cmd",
+    "NN"
+  ],
+  [
+    "deployment",
+    "NN"
+  ],
+  [
+    "printing",
+    "VBG"
+  ],
+  [
+    "types",
+    "NNS"
+  ],
+  [
+    "makefile",
+    "IN"
+  ],
+  [
+    "paypal",
+    "JJ"
+  ],
+  [
+    "woocommerce",
+    "NN"
+  ],
+  [
+    "webview",
+    "NN"
+  ],
+  [
+    "tcp",
+    "NN"
+  ],
+  [
+    "primefaces",
+    "NNS"
+  ],
+  [
+    "solr",
+    "NN"
+  ],
+  [
+    "import",
+    "NN"
+  ],
+  [
+    "datagridview",
+    "NN"
+  ],
+  [
+    "scroll",
+    "NN"
+  ],
+  [
+    "uiview",
+    "NN"
+  ],
+  [
+    "view",
+    "NN"
+  ],
+  [
+    "vbscript",
+    "NN"
+  ],
+  [
+    "websocket",
+    "NN"
+  ],
+  [
+    "graphics",
+    "NNS"
+  ],
+  [
+    "syntax",
+    "NN"
+  ],
+  [
+    "concurrency",
+    "NN"
+  ],
+  [
+    "fonts",
+    "NNS"
+  ],
+  [
+    "yii",
+    "NN"
+  ],
+  [
+    "oauth",
+    "NN"
+  ],
+  [
+    "merge",
+    "NN"
+  ],
+  [
+    "datatable",
+    "JJ"
+  ],
+  [
+    "build",
+    "NN"
+  ],
+  [
+    "redux",
+    "NN"
+  ],
+  [
+    "rspec",
+    "NN"
+  ],
+  [
+    "parameters",
+    "NNS"
+  ],
+  [
+    "emacs",
+    "NNS"
+  ],
+  [
+    "enums",
+    "NNS"
+  ],
+  [
+    "timer",
+    "NN"
+  ],
+  [
+    "kotlin",
+    "NN"
+  ],
+  [
+    "playframework",
+    "NN"
+  ],
+  [
+    "colors",
+    "NNS"
+  ],
+  [
+    "constructor",
+    "NN"
+  ],
+  [
+    "ffmpeg",
+    "NN"
   ]
 ]

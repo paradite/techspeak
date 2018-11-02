@@ -6,6 +6,19 @@
 
 ## Tools and resources used
 
-* python
-* nltk
-* [stackapi](https://github.com/AWegnerGitHub/stackapi)
+- Python
+  - nltk
+  - [stackapi](https://github.com/AWegnerGitHub/stackapi)
+- JavaScript
+  - [cfgrammar-tool](https://github.com/bakkot/cfgrammar-tool)
+- General NLP resources
+  - [nltk demo_grammar](https://www.nltk.org/_modules/nltk/parse/generate.html)
+  - [Analyzing Sentence Structure](https://www.nltk.org/book/ch08.html)
+
+## TODO
+
+- Better generation algorithm to handle tenses, subject verb agreement, etc
+
+## Contribute
+
+Any contribution is welcomed!

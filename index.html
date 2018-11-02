@@ -2,10 +2,16 @@
 <html>
 <head>
   <title>techspeak</title>
+  <style type="text/css">
+    #result:first-letter {
+      text-transform: capitalize;
+    }
+  </style>
 </head>
-<body>
+<body style="text-align: center;">
 <h1>techspeak</h1>
-<div id="tags"></div>
-<script src="app.js"/></script>
+<h2 id="result"></h2>
+<button id="refresh">Get a new sentence</button>
+<script src="dist/main.js"/></script>
 </body>
 </html>
