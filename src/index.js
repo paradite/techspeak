@@ -58,9 +58,12 @@ fetch('tags_with_pos.json')
 
     const exprGrammar = Grammar([
       Rule('S', [NT('NP'), T(' '), NT('VP'), T('.')]),
+      // expand only once for adjective
       Rule('NP', [NT('Det'), T(' '), NT('N')]),
+      Rule('NP', [NT('Det'), T(' '), NT('NJJ')]),
       Rule('NP', [NT('Det'), T(' '), NT('N'), T(' '), NT('PP')]),
-      Rule('N', [NT('JJ'), T(' '), NT('N')]),
+      Rule('NP', [NT('Det'), T(' '), NT('NJJ'), T(' '), NT('PP')]),
+      Rule('NJJ', [NT('JJ'), T(' '), NT('N')]),
       Rule('PP', [NT('P'), T(' '), NT('NP')]),
       Rule('VP', [NT('VP'), T(' '), NT('PP')]),
       Rule('VP', [NT('V'), T(' '), NT('NP')]),
