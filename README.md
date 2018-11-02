@@ -2,7 +2,7 @@
 
 > Generate random sentences that contains tech words.
 
-[Live site]()
+[Live site](https://paradite.github.io/techspeak/)
 
 ## Tools and resources used
 
