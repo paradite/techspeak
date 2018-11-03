@@ -6,8 +6,8 @@ const Grammar = types.Grammar;
 const Rule = types.Rule;
 const T = types.T;
 const NT = types.NT;
-const maxLength = 20;
-const minLength = 7;
+const maxLength = 18;
+const minLength = 8;
 const fixedMapping = {
   android: 'NN',
   string: 'NN',
@@ -37,8 +37,8 @@ fetch('tags_with_pos.json')
         techRules.push(Rule('N', [T(tags_with_pos[i][0])]));
       } else if (tags_with_pos[i][1] === 'VBD') {
         // verb, past tense
-        console.warn('VBD', tags_with_pos[i][0]);
-        techRules.push(Rule('VP', [T(tags_with_pos[i][0])]));
+        // console.warn('VBD', tags_with_pos[i][0]);
+        // techRules.push(Rule('VP', [T(tags_with_pos[i][0])]));
       } else if (tags_with_pos[i][1] === 'VBP') {
         // verb, present
         console.warn('VBP', tags_with_pos[i][0]);

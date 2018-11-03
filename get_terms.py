@@ -9,7 +9,7 @@ from stackapi import StackAPI
 
 SITE = StackAPI('stackoverflow')
 SITE.page_size = 100
-SITE.max_pages = 4
+SITE.max_pages = 6
 tags = [x['name'] for x in SITE.fetch('tags')['items'] if x['name'].isalpha()]
 
 # get pos tag individually to avoid confusing the tagger
