@@ -1,6 +1,6 @@
 # techspeak
 
-> Generate random sentences that contains tech words.
+> Generate random sentences with tech terms
 
 [Live site](https://paradite.github.io/techspeak/)
 
