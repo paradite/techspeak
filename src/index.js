@@ -7,7 +7,7 @@ const Rule = types.Rule;
 const T = types.T;
 const NT = types.NT;
 const maxLength = 18;
-const minLength = 8;
+const minLength = 11;
 const fixedMapping = {
   android: 'NN',
   string: 'NN',
@@ -68,7 +68,8 @@ fetch('tags_with_pos.json')
       Rule('VP', [NT('VP'), T(' '), NT('PP')]),
       Rule('VP', [NT('V'), T(' '), NT('NP')]),
       Rule('Det', [T('the')]),
-      Rule('Det', [T('a')]),
+      // TODO: fix a/an
+      // Rule('Det', [T('a')]),
       Rule('P', [T('in')]),
       Rule('P', [T('with')]),
       Rule('V', [NT('VBG')]),
