@@ -15,44 +15,52 @@ const fixedMapping = {
   drupal: 'NN',
   paypal: 'NN',
   datatable: 'NN',
-  sed: 'NN',
+  substring: 'NN',
+  sed: 'X',
+  networking: 'X',
+  nsstring: 'X',
 };
 
 const techRules = [];
 
-fetch('tags_with_pos.json')
+fetch('static/tags_with_pos.json')
   .then(function(response) {
     return response.json();
   })
   .then(function(tags_with_pos) {
     for (var i = 0; i < tags_with_pos.length; i++) {
+      let [word, pos] = tags_with_pos[i];
       // fix some errors from nltk
-      if (fixedMapping[tags_with_pos[i][0]]) {
-        tags_with_pos[i][1] = fixedMapping[tags_with_pos[i][0]];
-        console.log('fixed', tags_with_pos[i][0]);
+      if (fixedMapping.hasOwnProperty(word)) {
+        pos = fixedMapping[word];
+        console.log('fixed', word);
       }
 
       // https://pythonprogramming.net/natural-language-toolkit-nltk-part-speech-tagging/
-      if (tags_with_pos[i][1] === 'NN' || tags_with_pos[i][1] === 'NNS') {
-        techRules.push(Rule('N', [T(tags_with_pos[i][0])]));
-      } else if (tags_with_pos[i][1] === 'VBD') {
-        // verb, past tense
-        // console.warn('VBD', tags_with_pos[i][0]);
-        // techRules.push(Rule('VP', [T(tags_with_pos[i][0])]));
-      } else if (tags_with_pos[i][1] === 'VBP') {
+      if (pos === 'NN' || pos === 'NNS') {
+        techRules.push(Rule('N', [T(word)]));
+      } else if (pos === 'VBD') {
+        // verb, past tense, ignore
+      } else if (pos === 'VBP') {
         // verb, present
-        console.warn('VBP', tags_with_pos[i][0]);
-        techRules.push(Rule('VP', [T(tags_with_pos[i][0])]));
-      } else if (tags_with_pos[i][1] === 'VBG') {
+        techRules.push(Rule('VP', [T(word)]));
+        setTimeout(() => {
+          console.log('VP: ' + word);
+        }, 0);
+      } else if (pos === 'VBG') {
         // verb, present participle
-        console.warn('VBG', tags_with_pos[i][0]);
-        techRules.push(Rule('VBG', [T('is'), T(' '), T(tags_with_pos[i][0])]));
-      } else if (tags_with_pos[i][1] === 'JJ') {
+        techRules.push(Rule('VBG', [T('is'), T(' '), T(word)]));
+        setTimeout(() => {
+          console.log('VBG: ' + word);
+        }, 100);
+      } else if (pos === 'JJ') {
         // adjective
-        console.warn('JJ', tags_with_pos[i][0]);
-        techRules.push(Rule('JJ', [T(tags_with_pos[i][0])]));
+        techRules.push(Rule('JJ', [T(word)]));
+        setTimeout(() => {
+          console.log('JJ: ' + word);
+        }, 200);
       } else {
-        console.log('unknown', tags_with_pos[i][1], tags_with_pos[i][0]);
+        console.log('unknown', pos, word);
       }
     }
 
