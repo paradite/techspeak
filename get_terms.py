@@ -9,14 +9,15 @@ from stackapi import StackAPI
 
 SITE = StackAPI('stackoverflow')
 SITE.page_size = 100
-SITE.max_pages = 6
+SITE.max_pages = 10
 tags = [x['name'] for x in SITE.fetch('tags')['items'] if x['name'].isalpha()]
+tags.sort()
 
 # get pos tag individually to avoid confusing the tagger
 tags_with_pos = [nltk.tag.pos_tag([tag])[0] for tag in tags]
 
-with open('tags.json', 'w') as outfile:
-  json.dump(tags, outfile, indent=2)
+with open('static/tags.json', 'w') as outfile:
+    json.dump(tags, outfile, indent=2)
 
-with open('tags_with_pos.json', 'w') as outfile:
-  json.dump(tags_with_pos, outfile, indent=2)
+with open('static/tags_with_pos.json', 'w') as outfile:
+    json.dump(tags_with_pos, outfile, indent=2)
