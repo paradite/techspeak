@@ -6,8 +6,8 @@ const Grammar = types.Grammar;
 const Rule = types.Rule;
 const T = types.T;
 const NT = types.NT;
-const maxLength = 18;
-const minLength = 11;
+const maxLength = 9;
+const minLength = 5;
 const fixedMapping = {
   android: 'NN',
   string: 'NN',
@@ -44,37 +44,28 @@ fetch('static/tags_with_pos.json')
       } else if (pos === 'VBP') {
         // verb, present
         techRules.push(Rule('VP', [T(word)]));
-        setTimeout(() => {
-          console.log('VP: ' + word);
-        }, 0);
       } else if (pos === 'VBG') {
         // verb, present participle
-        techRules.push(Rule('VBG', [T('is'), T(' '), T(word)]));
-        setTimeout(() => {
-          console.log('VBG: ' + word);
-        }, 100);
+        techRules.push(Rule('VBG', [T('is'), T(word)]));
       } else if (pos === 'JJ') {
         // adjective
         techRules.push(Rule('JJ', [T(word)]));
-        setTimeout(() => {
-          console.log('JJ: ' + word);
-        }, 200);
       } else {
         console.log('unknown', pos, word);
       }
     }
 
     const exprGrammar = Grammar([
-      Rule('S', [NT('NP'), T(' '), NT('VP'), T('.')]),
+      Rule('S', [NT('NP'), NT('VP')]),
       // expand only once for adjective
-      Rule('NP', [NT('Det'), T(' '), NT('N')]),
-      Rule('NP', [NT('Det'), T(' '), NT('NJJ')]),
-      Rule('NP', [NT('Det'), T(' '), NT('N'), T(' '), NT('PP')]),
-      Rule('NP', [NT('Det'), T(' '), NT('NJJ'), T(' '), NT('PP')]),
-      Rule('NJJ', [NT('JJ'), T(' '), NT('N')]),
-      Rule('PP', [NT('P'), T(' '), NT('NP')]),
-      Rule('VP', [NT('VP'), T(' '), NT('PP')]),
-      Rule('VP', [NT('V'), T(' '), NT('NP')]),
+      Rule('NP', [NT('Det'), NT('N')]),
+      Rule('NP', [NT('Det'), NT('NJJ')]),
+      Rule('NP', [NT('Det'), NT('N'), NT('PP')]),
+      Rule('NP', [NT('Det'), NT('NJJ'), NT('PP')]),
+      Rule('NJJ', [NT('JJ'), NT('N')]),
+      Rule('PP', [NT('P'), NT('NP')]),
+      Rule('VP', [NT('VP'), NT('PP')]),
+      Rule('VP', [NT('V'), NT('NP')]),
       Rule('Det', [T('the')]),
       // TODO: fix a/an
       // Rule('Det', [T('a')]),
@@ -87,12 +78,15 @@ fetch('static/tags_with_pos.json')
     function regenerate() {
       const generator = generatorFactory(exprGrammar);
       let length = null;
-      let sentence = null;
-      while (!sentence) {
+      let tokens = null;
+      while (!tokens) {
         length =
           Math.floor(Math.random() * (maxLength - minLength + 1)) + minLength;
-        sentence = generator(length);
+        tokens = generator(length, {
+          list: true,
+        });
       }
+      const sentence = tokens.join(' ') + '.';
       document.getElementById('result').innerHTML = sentence;
     }
     regenerate();

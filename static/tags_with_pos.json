@@ -13,7 +13,7 @@
   ],
   [
     "air",
-    "PRP$"
+    "NN"
   ],
   [
     "ajax",
@@ -37,15 +37,15 @@
   ],
   [
     "android",
-    "VBD"
+    "NN"
   ],
   [
     "angular",
-    "JJ"
+    "NN"
   ],
   [
     "angularjs",
-    "NNS"
+    "NN"
   ],
   [
     "animation",
@@ -65,7 +65,7 @@
   ],
   [
     "apache",
-    "PRP"
+    "NN"
   ],
   [
     "api",
@@ -133,11 +133,11 @@
   ],
   [
     "autocomplete",
-    "JJ"
+    "NN"
   ],
   [
     "autolayout",
-    "IN"
+    "NN"
   ],
   [
     "automation",
@@ -173,11 +173,11 @@
   ],
   [
     "binary",
-    "JJ"
+    "NN"
   ],
   [
     "binding",
-    "VBG"
+    "NN"
   ],
   [
     "bitmap",
@@ -193,7 +193,7 @@
   ],
   [
     "boolean",
-    "JJ"
+    "NN"
   ],
   [
     "boost",
@@ -217,7 +217,7 @@
   ],
   [
     "c",
-    "NN"
+    "NNS"
   ],
   [
     "caching",
@@ -241,7 +241,7 @@
   ],
   [
     "canvas",
-    "NNS"
+    "NN"
   ],
   [
     "cassandra",
@@ -253,7 +253,7 @@
   ],
   [
     "centos",
-    "NNS"
+    "NN"
   ],
   [
     "certificate",
@@ -473,7 +473,7 @@
   ],
   [
     "cypher",
-    "PRP$"
+    "NN"
   ],
   [
     "dart",
@@ -489,7 +489,7 @@
   ],
   [
     "datagrid",
-    "VBD"
+    "NN"
   ],
   [
     "datagridview",
@@ -565,7 +565,7 @@
   ],
   [
     "django",
-    "IN"
+    "NN"
   ],
   [
     "dll",
@@ -573,7 +573,7 @@
   ],
   [
     "dns",
-    "NNS"
+    "NN"
   ],
   [
     "docker",
@@ -581,7 +581,7 @@
   ],
   [
     "dockerfile",
-    "IN"
+    "NN"
   ],
   [
     "doctrine",
@@ -597,7 +597,7 @@
   ],
   [
     "double",
-    "JJ"
+    "RB"
   ],
   [
     "download",
@@ -609,7 +609,7 @@
   ],
   [
     "drupal",
-    "JJ"
+    "NN"
   ],
   [
     "duplicates",
@@ -637,7 +637,7 @@
   ],
   [
     "elixir",
-    "PRP$"
+    "NN"
   ],
   [
     "eloquent",
@@ -645,7 +645,7 @@
   ],
   [
     "emacs",
-    "NNS"
+    "NN"
   ],
   [
     "email",
@@ -653,7 +653,7 @@
   ],
   [
     "embedded",
-    "VBD"
+    "VBN"
   ],
   [
     "encoding",
@@ -697,7 +697,7 @@
   ],
   [
     "extjs",
-    "NNS"
+    "NN"
   ],
   [
     "facebook",
@@ -721,7 +721,7 @@
   ],
   [
     "find",
-    "NN"
+    "VB"
   ],
   [
     "firebase",
@@ -813,7 +813,7 @@
   ],
   [
     "get",
-    "NN"
+    "VB"
   ],
   [
     "git",
@@ -829,7 +829,7 @@
   ],
   [
     "glassfish",
-    "JJ"
+    "NN"
   ],
   [
     "gmail",
@@ -837,11 +837,11 @@
   ],
   [
     "go",
-    "IN"
+    "VB"
   ],
   [
     "gps",
-    "NNS"
+    "NN"
   ],
   [
     "gradle",
@@ -869,7 +869,7 @@
   ],
   [
     "grid",
-    "VBD"
+    "NN"
   ],
   [
     "gridview",
@@ -881,7 +881,7 @@
   ],
   [
     "gruntjs",
-    "NNS"
+    "NN"
   ],
   [
     "gson",
@@ -921,7 +921,7 @@
   ],
   [
     "hdfs",
-    "NNS"
+    "NN"
   ],
   [
     "header",
@@ -945,7 +945,7 @@
   ],
   [
     "hive",
-    "JJ"
+    "NN"
   ],
   [
     "hover",
@@ -961,7 +961,7 @@
   ],
   [
     "https",
-    "NNS"
+    "NN"
   ],
   [
     "hyperlink",
@@ -981,7 +981,7 @@
   ],
   [
     "iis",
-    "NNS"
+    "NN"
   ],
   [
     "image",
@@ -1005,7 +1005,7 @@
   ],
   [
     "indexing",
-    "NN"
+    "VBG"
   ],
   [
     "inheritance",
@@ -1077,7 +1077,7 @@
   ],
   [
     "itext",
-    "IN"
+    "NN"
   ],
   [
     "jackson",
@@ -1125,7 +1125,7 @@
   ],
   [
     "jestjs",
-    "NNS"
+    "NN"
   ],
   [
     "jetty",
@@ -1141,7 +1141,7 @@
   ],
   [
     "jms",
-    "NNS"
+    "NN"
   ],
   [
     "join",
@@ -1161,7 +1161,7 @@
   ],
   [
     "jqgrid",
-    "VBD"
+    "NN"
   ],
   [
     "jquery",
@@ -1201,11 +1201,11 @@
   ],
   [
     "kernel",
-    "NN"
+    "NNS"
   ],
   [
     "key",
-    "JJ"
+    "NN"
   ],
   [
     "keyboard",
@@ -1241,7 +1241,7 @@
   ],
   [
     "layout",
-    "IN"
+    "NN"
   ],
   [
     "ldap",
@@ -1253,7 +1253,7 @@
   ],
   [
     "less",
-    "JJR"
+    "RBR"
   ],
   [
     "libgdx",
@@ -1333,7 +1333,7 @@
   ],
   [
     "macos",
-    "NNS"
+    "NN"
   ],
   [
     "macros",
@@ -1341,11 +1341,11 @@
   ],
   [
     "magento",
-    "IN"
+    "NN"
   ],
   [
     "makefile",
-    "IN"
+    "NN"
   ],
   [
     "malloc",
@@ -1357,7 +1357,7 @@
   ],
   [
     "mapping",
-    "VBG"
+    "NN"
   ],
   [
     "mapreduce",
@@ -1405,7 +1405,7 @@
   ],
   [
     "mercurial",
-    "JJ"
+    "NN"
   ],
   [
     "merge",
@@ -1429,7 +1429,7 @@
   ],
   [
     "mobile",
-    "JJ"
+    "NN"
   ],
   [
     "mocha",
@@ -1441,7 +1441,7 @@
   ],
   [
     "mockito",
-    "IN"
+    "NN"
   ],
   [
     "model",
@@ -1501,7 +1501,7 @@
   ],
   [
     "nested",
-    "VBD"
+    "VBN"
   ],
   [
     "netbeans",
@@ -1509,7 +1509,7 @@
   ],
   [
     "networking",
-    "VBG"
+    "NN"
   ],
   [
     "nginx",
@@ -1649,7 +1649,7 @@
   ],
   [
     "paypal",
-    "JJ"
+    "NN"
   ],
   [
     "pdf",
@@ -1673,7 +1673,7 @@
   ],
   [
     "phantomjs",
-    "NNS"
+    "NN"
   ],
   [
     "php",
@@ -1757,7 +1757,7 @@
   ],
   [
     "printing",
-    "VBG"
+    "NN"
   ],
   [
     "process",
@@ -1841,7 +1841,7 @@
   ],
   [
     "reactjs",
-    "NNS"
+    "NN"
   ],
   [
     "realm",
@@ -1857,7 +1857,7 @@
   ],
   [
     "redis",
-    "NNS"
+    "NN"
   ],
   [
     "redux",
@@ -1881,7 +1881,7 @@
   ],
   [
     "replace",
-    "NN"
+    "VB"
   ],
   [
     "repository",
@@ -1893,11 +1893,11 @@
   ],
   [
     "requirejs",
-    "NNS"
+    "NN"
   ],
   [
     "resize",
-    "NN"
+    "VB"
   ],
   [
     "resources",
@@ -1945,11 +1945,11 @@
   ],
   [
     "rust",
-    "RB"
+    "NN"
   ],
   [
     "rxjs",
-    "NNS"
+    "NN"
   ],
   [
     "safari",
@@ -1961,7 +1961,7 @@
   ],
   [
     "sas",
-    "NNS"
+    "NN"
   ],
   [
     "sass",
@@ -1969,7 +1969,7 @@
   ],
   [
     "save",
-    "NN"
+    "VB"
   ],
   [
     "sbt",
@@ -2017,7 +2017,7 @@
   ],
   [
     "sed",
-    "VBD"
+    "VBN"
   ],
   [
     "select",
@@ -2125,11 +2125,11 @@
   ],
   [
     "sqlalchemy",
-    "PRP$"
+    "NN"
   ],
   [
     "sqlite",
-    "IN"
+    "NN"
   ],
   [
     "ssh",
@@ -2169,7 +2169,7 @@
   ],
   [
     "string",
-    "VBG"
+    "NN"
   ],
   [
     "struct",
@@ -2261,11 +2261,11 @@
   ],
   [
     "terminal",
-    "JJ"
+    "NN"
   ],
   [
     "testing",
-    "NN"
+    "VBG"
   ],
   [
     "testng",
@@ -2285,7 +2285,7 @@
   ],
   [
     "tfs",
-    "NNS"
+    "NN"
   ],
   [
     "themes",
@@ -2297,7 +2297,7 @@
   ],
   [
     "timeout",
-    "IN"
+    "NN"
   ],
   [
     "timer",
@@ -2321,7 +2321,7 @@
   ],
   [
     "tomcat",
-    "IN"
+    "NN"
   ],
   [
     "transactions",
@@ -2453,7 +2453,7 @@
   ],
   [
     "vagrant",
-    "JJ"
+    "NN"
   ],
   [
     "validation",
@@ -2593,7 +2593,7 @@
   ],
   [
     "xmlhttprequest",
-    "NN"
+    "JJS"
   ],
   [
     "xna",

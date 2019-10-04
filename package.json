@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/paradite/techspeak#readme",
   "dependencies": {
-    "cfgrammar-tool": "^0.2.2",
+    "cfgrammar-tool": "^1.0.0",
     "webpack": "^4.24.0"
   },
   "devDependencies": {

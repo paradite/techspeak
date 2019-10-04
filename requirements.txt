@@ -1,2 +1,2 @@
 stackapi
-nltk
+nltk ~= 3.1
